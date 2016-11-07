@@ -33,6 +33,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
+Plugin 'mileszs/ack.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -60,6 +61,3 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
-
-map <F9> ifunction () {<CR>}<Esc>kwi
-
