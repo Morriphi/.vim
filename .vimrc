@@ -1,4 +1,5 @@
 set nocompatible              " be iMproved, required
+
 filetype off                  " required
 
 set t_Co=256
@@ -52,10 +53,15 @@ imap jj <Esc>
 map <C-\> :NERDTreeToggle <CR>
 let g:NERDTreeHijackNetrw=0
 
+:map <C-l> "ayiw:Ack <C-r>a
+
 set rnu
 set incsearch
 set hlsearch
 set backupext=.bak
+
+nmap <c-s> :w<cr>
+imap <c-s> <esc>:w<cr>a
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
