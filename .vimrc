@@ -23,6 +23,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'jelera/vim-javascript-syntax'
+
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'easymotion/vim-easymotion'
@@ -55,12 +56,19 @@ let g:NERDTreeHijackNetrw=0
 
 :map <C-l> "ayiw:Ack <C-r>a
 
+
+" Snippets
+nnoremap ,desc :-1read $HOME/.vim/snippets/desc<CR>f"a
+nnoremap ,it :-1read $HOME/.vim/snippets/it<CR>f"a
+nnoremap ,html :-1read $HOME/.vim/snippets/html<CR>4jf>a
+
 set rnu
 set incsearch
 set hlsearch
 set backupext=.bak
 
 nmap <c-s> :w<cr>
+
 imap <c-s> <esc>:w<cr>a
 
 noremap <Up> <NOP>
