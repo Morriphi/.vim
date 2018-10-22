@@ -51,7 +51,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 imap jj <Esc>
-map <C-\> :NERDTreeToggle <CR>
+map <C-\> :NERDTreeToggle <CR>:set rnu<CR>:set nu<CR>
 let g:NERDTreeHijackNetrw=0
 
 :map <C-l> "ayiw:Ack <C-r>a
